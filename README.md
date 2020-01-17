@@ -38,8 +38,9 @@ for f in *.zip; do unzip $f; done
 rm *.zip
 ```
 
-# Get the code
+# Training / Inference
 ```bash
+# get the code
 git clone git@github.com:see--/natural-question-answering.git
 # install `transformers`
 cd natural-question-answering/transformers_repo
@@ -49,6 +50,8 @@ cd ..
 mv ../*.jsonl .
 # run the training and evaluation
 python3 nq_to_squad.py; python3 train_eval.py
+# run inference on the test set
+python3 nq_to_squad.py --fn simplified-nq-test.jsonl; python3 train_eval.py --do_not_train --predict_fn nq-test-v1.0.1.json
 ```
 
 The training and evaluation should finish within 5 hours and you should get a local validation score of ~`0.72` and public LB of ~`0.73`. For inference please check my [Kaggle Notebook](https://www.kaggle.com/seesee/submit-full).
