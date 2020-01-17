@@ -88,7 +88,7 @@ setup(
         "numpy",
         "tokenizers == 0.0.11",
         # accessing files from S3 directly
-        # "boto3",
+        "boto3",
         # filesystem locks e.g. to prevent parallel downloads
         "filelock",
         # for downloading models over HTTPS
@@ -96,9 +96,9 @@ setup(
         # progress bars in model download and training scripts
         "tqdm",
         # for OpenAI GPT
-        # "regex != 2019.12.17",
+        "regex != 2019.12.17",
         # for XLNet
-        # "sentencepiece",
+        "sentencepiece",
         # for XLM
         "sacremoses",
     ],
