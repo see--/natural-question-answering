@@ -367,7 +367,7 @@ def main():
     parser.add_argument("--model_name_or_path",
         default="bert-large-uncased-whole-word-masking-finetuned-squad", type=str)
     parser.add_argument("--init_weights", default="", type=str)
-    parser.add_argument("--id", default="68", type=str)
+    parser.add_argument("--id", default="0", type=str)
 
     # Other parameters
     parser.add_argument('--short_null_score_diff_threshold', type=float, default=0.0)

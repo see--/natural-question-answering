@@ -24,8 +24,7 @@ cd Python-3.6.9
 sudo make install
 cd ..
 sudo pip3 install --upgrade pip
-sudo pip3 install --upgrade tensorflow==2.1 tqdm ipython matplotlib pandas sklearn oauth2client google-api-python-client tensorflow-hub  # noqa
-sudo pip3 install --upgrade git+https://github.com/huggingface/transformers.git"""
+sudo pip3 install --upgrade tensorflow==2.1 tqdm ipython matplotlib pandas sklearn oauth2client google-api-python-client tensorflow-hub"""  # noqa
 
 startup_file = 'startup.sh'
 with open(startup_file, 'w') as f:

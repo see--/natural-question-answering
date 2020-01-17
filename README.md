@@ -41,9 +41,9 @@ rm *.zip
 # Get the code
 ```bash
 git clone git@github.com:see--/natural-question-answering.git
-# patch `transformers`
+# install `transformers`
 cd natural-question-answering/transformers_repo
-sudo python3 setup.py develop
+sudo python3 setup.py install
 cd ..
 # move the data to the root directory
 mv ../*.jsonl .

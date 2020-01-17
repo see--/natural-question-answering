@@ -41,7 +41,7 @@ def convert_nq_to_squad(args=None):
   if args is None:
     parser = argparse.ArgumentParser()
     parser.add_argument('--fn', type=str, default='simplified-nq-train.jsonl')
-    parser.add_argument('--version', type=str, default='v1.0.2')
+    parser.add_argument('--version', type=str, default='v1.0.1')
     parser.add_argument('--prefix', type=str, default='nq')
     parser.add_argument('--p_val', type=float, default=0.1)
     parser.add_argument('--crop_len', type=int, default=2_500)
