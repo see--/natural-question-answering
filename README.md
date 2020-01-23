@@ -1,7 +1,8 @@
 # Overview
 
-In this repository you will find the code for the [TensorFlow 2.0 Question Answering Challenge](https://www.kaggle.com/c/tensorflow2-question-answering). My team finished as Xth with a [micro F1-score](https://www.kaggle.com/c/tensorflow2-question-answering/overview/evaluation) of `0.XX`. The challenge was to develop better algorithms for natural question answering. You can can find more details about the task and the dataset in these resources:
+In this repository you will find the code for the [TensorFlow 2.0 Question Answering Challenge](https://www.kaggle.com/c/tensorflow2-question-answering). My team finished as 2nd / 1239 with a [micro F1-score](https://www.kaggle.com/c/tensorflow2-question-answering/overview/evaluation) of `0.71` on the private test set. The challenge was to develop better algorithms for natural question answering. You can can find more details about the task and the dataset in these resources:
 * https://www.kaggle.com/c/tensorflow2-question-answering/overview
+* https://www.kaggle.com/c/tensorflow2-question-answering/discussion/127333
 * https://storage.googleapis.com/pub-tools-public-publication-data/pdf/1f7b46b5378d757553d3e92ead36bda2e4254244.pdf
 * https://arxiv.org/abs/1901.08634
 
