@@ -50,7 +50,7 @@ rm *.zip
 # Training / Inference
 ```bash
 # get the code
-git clone git@github.com:see--/natural-question-answering.git
+git clone https://github.com/see--/natural-question-answering.git
 # install `transformers`
 cd natural-question-answering/transformers_repo
 sudo python3 setup.py install
