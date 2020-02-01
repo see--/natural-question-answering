@@ -63,7 +63,7 @@ python3 nq_to_squad.py; python3 train_eval.py
 python3 nq_to_squad.py --fn simplified-nq-test.jsonl; python3 train_eval.py --do_not_train --predict_fn nq-test-v1.0.1.json
 ```
 
-The training and evaluation should finish within 5 hours and you should get a local validation score of ~`0.72` and public LB of ~`0.73`. For inference please check my [Kaggle Notebook](https://www.kaggle.com/seesee/submit-full).
+The training and evaluation should finish within 5 hours and you should get a local validation score of ~`0.72` and public LB of ~`0.73`. The weights are stored in `nq_bert_uncased_0/checkpoint-015400/weights.h5`. For inference please check my [Kaggle Notebook](https://www.kaggle.com/seesee/submit-full).
 
 # Notice
 
