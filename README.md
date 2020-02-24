@@ -70,12 +70,15 @@ The training and evaluation should finish within 5 hours and you should get a lo
 The trained model can be loaded from [TensorFlow Hub](https://www.tensorflow.org/hub). A simple usage example is given in the the [demo script](https://github.com/see--/natural-question-answering/blob/master/demo.py):
 
 ```python
+import os
 import tensorflow as tf
 import tensorflow_hub as hub
 from transformers import BertTokenizer
 
 
 def main():
+  os.system('wget https://github.com/see--/natural-question-answering/releases/download/v0.0.1/tokenizer_tf2_qa.zip')
+  os.system('unzip tokenizer_tf2_qa.zip')
   tokenizer = BertTokenizer.from_pretrained('tokenizer_tf2_qa')
   model = hub.load(
       'https://github.com/see--/natural-question-answering/releases/download/v0.0.1/model.tar.gz')

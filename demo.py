@@ -1,9 +1,12 @@
+import os
 import tensorflow as tf
 import tensorflow_hub as hub
 from transformers import BertTokenizer
 
 
 def main():
+  os.system('wget https://github.com/see--/natural-question-answering/releases/download/v0.0.1/tokenizer_tf2_qa.zip')
+  os.system('unzip tokenizer_tf2_qa.zip')
   tokenizer = BertTokenizer.from_pretrained('tokenizer_tf2_qa')
   model = hub.load(
       'https://github.com/see--/natural-question-answering/releases/download/v0.0.1/model.tar.gz')
