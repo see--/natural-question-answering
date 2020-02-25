@@ -72,6 +72,7 @@ The trained model can be loaded from [TensorFlow Hub](https://www.tensorflow.org
 ```python
 import os
 import tensorflow as tf
+tf.enable_eager_execution()
 import tensorflow_hub as hub
 from transformers import BertTokenizer
 
